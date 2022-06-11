@@ -1,0 +1,127 @@
+:root {
+    --red: #BF1304;
+    --blue: #00040D;
+    --black: rgba(0, 0, 0, .50);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*basic elements*/
+
+body {
+    background: var(--blue);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red);
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+header nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.wrapper i {
+    margin-right: 40px;
+}
+
+.wrapper i:hover {
+    cursor: pointer;
+}
+
+
+/*Main movie*/
+
+.main-game {
+    font-size: 16px;
+    background: linear-gradient( rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/capa1.jpg');
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-game .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    letter-spacing: 0.7px;
+}
+
+.main-game .main-title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botao {
+    background: var(--black);
+    border: none;
+    color: #fff;
+    width: 300px;
+    height: 80px;
+    padding: 15px 20px;
+    margin-right: 15px;
+    box-shadow: black 5px 5px 38px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    text-align: center;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: black;
+    border: #00040D solid 2px;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.wrapper {
+    margin-left: 20px;
+}
+
+.main-game .wrapper {
+    width: 60%;
+    margin-top: 50px;
+}
+
+.box-game {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-game h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
